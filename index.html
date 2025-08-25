@@ -16,13 +16,14 @@
             extend: {
             colors: {
                 clifford: '#da373d',
+                'btn-bg-color': '#ABEF5F',
             }
             }
         }
         }
     </script>
     <!-- daisyUI CDN -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- fontawesome CDN  -->
@@ -32,10 +33,90 @@
         .manrope-font{
             font-family: "Manrope", sans-serif;
         }
+        .btn-bg{
+            color: #ABEF5F;
+        }
     </style>
 
 </head>
 <body class="manrope-font">
-    
+    <!-- ========== Start Section Header ========== -->
+    <header class="bg-gradient-to-b from-gray-100 to-gray-0 lg:container mx-auto">
+        <!-- navbar  -->
+        <nav class="mx-auto pt-4">
+            <div class="navbar lg:container mx-auto ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-gray-500">
+                        <li><a class="font-bold text-black">Home</a></li>
+                        <li><a class="">Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">
+                        <div class="w-8 h-8 bg-[#ABEF5F] rounded-full">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </div>
+                        <span class=" font-extrabold text-2xl lg:text-3xl">Rinterio</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold text-black">Home</a></li>
+                        <li><a class="">Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="navbar-end">
+                    <div class="hidden md:inline-flex items-center">
+                        <div class="flex gap-5">
+                            <div class="w-12 h-12 bg-white rounded-full text-gray-500 flex items-center justify-center">
+                                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                            </div>
+                            <div class="w-12 h-12 bg-white rounded-full text-gray-500 flex items-center justify-center">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <div class="px-[20px] py-3 ">
+                            <a class="btn w-[208px] h-[48px] bg-[#ABEF5F] rounded-full font-bold text-xl">Book Consult <div class="w-8 h-8 bg-black rounded-full text-white flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            </div></a>  
+                        </div>
+                    </div>
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden w-12 h-12 bg-white rounded-full text-gray-500 text-6xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+        <!-- Hero section  -->
+         <div class="mx-auto">
+            <div class="hero">
+                <div class="hero-content text-center">
+                    <div class="mx-auto">
+                        <div class="flex justify-center items-center"><img class="" src="assets/banner.png" alt=""></div>
+                        <h1 class="text-2xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a <br>striking appearance</h1>
+                        <p class="py-6 text-base text-gray-500 w-84 h-24 mx-auto md:w-142 md:h-20 lg:w-243 lg:h-13">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <div class="px-[20px] py-15 md:py-8 ">
+                            <a class="btn w-[208px] h-[48px] bg-[#ABEF5F80] rounded-full font-bold text-xl">View Details<div class="w-8 h-8 bg-[#ABEF5F] rounded-full text-black flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-right font-thin -rotate-45"></i>
+                            </div></a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </header>
+    <!-- ========== End Section Header ========== -->
+
 </body>
 </html>
