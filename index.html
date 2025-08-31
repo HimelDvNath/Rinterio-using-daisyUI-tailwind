@@ -37,6 +37,77 @@
             color: #ABEF5F;
         }
         
+        .item1{
+            grid-area: commercial1;
+        }
+        .item2{
+            grid-area: building1;
+        }
+        .item3{
+            grid-area: building2;
+        }
+        .item4{
+            grid-area: commercial2;
+        }
+        .item5{
+            grid-area: building3;
+        }
+        .lg-grid-template-areas{
+            grid-template-areas: 
+            'commercial1 commercial1 building1'
+            'building2 commercial2 building3';
+        }
+        .lg-grid-container{
+            display: grid;
+            grid-template-areas: 
+            'commercial1 commercial1 commercial1 building1 building1'
+            'building2 commercial2 commercial2 commercial2 building3';
+            gap: 10px;
+        }
+        .md-grid-container{
+            display: grid;
+            grid-template-areas: 
+            'commercial1 commercial1'
+            'building1 building3'
+            'commercial2 commercial2'
+            'building2 building3';
+            gap: 10px;
+        }
+        @media (min-width: 640px) {  /* md */
+            .my-custom-grid {
+                display: grid;
+                grid-template-areas: 
+                'commercial1'
+                'building1'
+                'building3'
+                'commercial2'
+                'building2'
+                ;
+                gap: 10px;
+            }
+        }
+        @media (min-width: 768px) {  /* md */
+            .my-custom-grid {
+                display: grid;
+                grid-template-areas: 
+                'commercial1 commercial1'
+                'building1 building3'
+                'commercial2 commercial2'
+                'building2 building3';
+                gap: 10px;
+            }
+        }
+
+        @media (min-width: 1024px) {  /* lg */
+            .my-custom-grid {
+                display: grid;
+                grid-template-areas: 
+                'commercial1 commercial1 commercial1 building1 building1'
+                'building2 commercial2 commercial2 commercial2 building3';
+                gap: 10px;
+            }
+        }
+
     </style>
 
 </head>
@@ -198,7 +269,7 @@
         </section>
 
         <!-- work process  -->
-         <section class="lg:container mx-auto">
+         <section class="lg:container mx-auto mb-10">
             <div class="hero ">
                 <div class="hero-content text-center">
                     <div class="">
@@ -222,7 +293,7 @@
                                 
                             </div>
                             <!-- card-2  -->
-                            <div class="card bg-[#E7C1D3] text-primary-content">
+                            <div class="card bg-[#EFDA6E] text-primary-content">
                                  <!-- card 2  -->
                                 <div class="card-body text-black">
                                     <img class="w-12 h-12" src="assets/flow-chart.png" alt="">
@@ -231,7 +302,7 @@
                                 </div>
                             </div>
                             <!-- card-3  -->
-                            <div class="card bg-[#E7C1D3] text-primary-content">
+                            <div class="card bg-[#A4DAC3] text-primary-content">
                                 <!-- card 3  -->
                                 <div class="card-body text-black">
                                     <img class="w-12 h-12" src="assets/vision.png" alt="">
@@ -240,7 +311,7 @@
                                 </div>
                             </div>
                             <!-- card-4  -->
-                            <div class="card bg-[#E7C1D3] text-primary-content">
+                            <div class="card bg-[#77AAEA] text-primary-content">
                                 <!-- card 4  -->
                                 <div class="card-body text-black">
                                     <img class="w-12 h-12" src="assets/budget-planning.png" alt="">
@@ -248,6 +319,96 @@
                                     <p class="text-left text-gray-700">The barn house captivates with its blend of rustic charm and modern.</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- latest Portfolio  -->
+         <section class="lg:container mx-auto bg-[#FFFFFF]">
+            <div class="hero ">
+                <div class="hero-content text-center">
+                    <div class="">
+                        <!-- text  -->
+                        <div class="text-center lg:text-center">
+                             <button class="btn bg-white text-gray-700 rounded-full border-none mb-5">
+                                <i class="fa-solid fa-arrow-right text-[#494949] font-bold"></i> 
+                                Explore our Latest works</button>
+                            <h1 class="text-4xl font-bold">Our Latest Portfolio</h1>
+                            <p class="py-6 text-gray-700 mb-5">
+                                The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.
+                            </p>
+                        </div>
+                        <!-- card  -->
+                        
+                        <div class=" grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+                            <!-- commercial card 1  -->
+                            <div class="md:card md:flex-row card-side flex-col bg-white shadow-2xl p-6 inline-flex md:col-span-2 lg:col-span-3 overflow-auto">
+                                <figure>
+                                    <img
+                                    src="assets/img1.png"
+                                    alt="commercial" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[#494949] font-extrabold text-2xl">Commercial</h2>
+                                    <p class="text-left font-medium text-[#737373] text-base">The barn house captivates with its blend of rustic charm <br>and modern. The barn house captivates with its blend of <br> rustic charm and modern .</p>
+                                    <div class="card-actions flex-row items-center w-full">
+                                        <button class="font-extrabold text-[#212121] text-xl">View Details</button>
+                                        <div class="w-8 h-8 bg-[#ABEF5F] rounded-full text-black flex items-center justify-center">
+                                                <i class="fa-solid fa-arrow-right font-thin -rotate-45"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- building 1  -->
+                            <div class="bg-white shadow-2xl p-6 flex justify-center items-center  lg:col-span-2">
+                                <figure class="">
+                                    <img src="assets/img2.png" alt="" class="my-auto">
+                                </figure>
+                             </div>
+                             <!-- building 3  -->
+                             <div class="bg-white shadow-2xl p-6 flex justify-center items-center hidden lg:visible lg:col-span-1 lg:hidden">
+                                <figure>
+                                    <img src="assets/img3.png" alt="">
+                                </figure>
+                             </div>
+                             <!-- building 3  -->
+                             <div class="bg-white shadow-2xl p-6 flex justify-center items-center lg:col-span-1">
+                                <figure>
+                                    <img src="assets/img5.png" alt="">
+                                </figure>
+                             </div>
+                             <!-- commercial card 2  -->
+                            <div class="flex-col md:flex-row md:card card-side bg-white shadow-2xl p-6 inline-flex md:col-span-2 lg:col-span-3 overflow-auto">
+                                <figure>
+                                    <img
+                                    src="assets/img4.png"
+                                    alt="commercial" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title text-[#494949] font-extrabold text-2xl">Commercial</h2>
+                                    <p class="text-left font-medium text-[#737373] text-base">The barn house captivates with <br> its blend of rustic charm and <br> modern. </p>
+                                    <div class="card-actions flex-row items-center w-full">
+                                        <button class="font-extrabold text-[#212121] text-xl">View Details</button>
+                                        <div class="w-8 h-8 bg-[#ABEF5F] rounded-full text-black flex items-center justify-center">
+                                                <i class="fa-solid fa-arrow-right font-thin -rotate-45"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- building 3  -->
+                             <div class="bg-white shadow-2xl p-6 flex justify-center items-center lg:hidden lg:col-span-1 lg:hidden">
+                                <figure>
+                                    <img src="assets/img3.png" alt="">
+                                </figure>
+                             </div>
+                            <!-- building 3  -->
+                             <div class="bg-white shadow-2xl p-6 flex justify-center items-center lg:col-span-1">
+                                <figure>
+                                    <img src="assets/img5.png" alt="">
+                                </figure>
+                             </div>
                         </div>
                     </div>
                 </div>
